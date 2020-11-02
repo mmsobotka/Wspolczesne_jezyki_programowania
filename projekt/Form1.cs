@@ -57,12 +57,12 @@ namespace projekt
         {
             if (picAnimation == 0)
             {
-                this.pictureBox2.Load("C:\\Users\\Milena\\Desktop\\projekt_\\picture\\fog2.png");
+                this.pictureBox2.Load(".\\..\\..\\picture\\fog2.png");
                
             }
             else if (picAnimation == 1)
             {
-                this.pictureBox2.Load("C:\\Users\\Milena\\Desktop\\projekt_\\picture\\fog1.png");
+                this.pictureBox2.Load(".\\..\\..\\picture\\fog1.png");
             }
             
             picAnimation++;

@@ -34,14 +34,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_2 = new ePOSOne.btnProduct.Button_WOC();
+            this.button_1 = new ePOSOne.btnProduct.Button_WOC();
             this.label1 = new System.Windows.Forms.Label();
+            this.button_3 = new ePOSOne.btnProduct.Button_WOC();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button_4 = new ePOSOne.btnProduct.Button_WOC();
-            this.button_2 = new ePOSOne.btnProduct.Button_WOC();
-            this.button_1 = new ePOSOne.btnProduct.Button_WOC();
-            this.button_3 = new ePOSOne.btnProduct.Button_WOC();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,6 +59,48 @@
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button_2
+            // 
+            this.button_2.BackColor = System.Drawing.Color.Transparent;
+            this.button_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_2.BorderColor = System.Drawing.Color.Transparent;
+            this.button_2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button_2.FlatAppearance.BorderSize = 0;
+            this.button_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_2.Location = new System.Drawing.Point(120, 242);
+            this.button_2.Name = "button_2";
+            this.button_2.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.button_2.OnHoverButtonColor = System.Drawing.Color.Transparent;
+            this.button_2.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.button_2.Size = new System.Drawing.Size(223, 77);
+            this.button_2.TabIndex = 9;
+            this.button_2.Text = "Wyniki";
+            this.button_2.TextColor = System.Drawing.Color.Black;
+            this.button_2.UseVisualStyleBackColor = false;
+            this.button_2.Click += new System.EventHandler(this.button_2_Click);
+            // 
+            // button_1
+            // 
+            this.button_1.BackColor = System.Drawing.Color.Transparent;
+            this.button_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_1.BorderColor = System.Drawing.Color.Transparent;
+            this.button_1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button_1.FlatAppearance.BorderSize = 0;
+            this.button_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_1.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_1.Location = new System.Drawing.Point(120, 145);
+            this.button_1.Name = "button_1";
+            this.button_1.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.button_1.OnHoverButtonColor = System.Drawing.Color.Transparent;
+            this.button_1.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.button_1.Size = new System.Drawing.Size(223, 77);
+            this.button_1.TabIndex = 8;
+            this.button_1.Text = "Start";
+            this.button_1.TextColor = System.Drawing.Color.Black;
+            this.button_1.UseVisualStyleBackColor = false;
+            this.button_1.Click += new System.EventHandler(this.button_1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -71,6 +113,27 @@
             this.label1.Text = "Podróż po PG!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button_3
+            // 
+            this.button_3.BackColor = System.Drawing.Color.Transparent;
+            this.button_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button_3.BorderColor = System.Drawing.Color.Transparent;
+            this.button_3.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button_3.FlatAppearance.BorderSize = 0;
+            this.button_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_3.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_3.Location = new System.Drawing.Point(120, 339);
+            this.button_3.Name = "button_3";
+            this.button_3.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.button_3.OnHoverButtonColor = System.Drawing.Color.Transparent;
+            this.button_3.OnHoverTextColor = System.Drawing.Color.Transparent;
+            this.button_3.Size = new System.Drawing.Size(223, 77);
+            this.button_3.TabIndex = 6;
+            this.button_3.Text = "Opcje";
+            this.button_3.TextColor = System.Drawing.Color.Black;
+            this.button_3.UseVisualStyleBackColor = false;
+            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // pictureBox1
             // 
@@ -119,69 +182,6 @@
             this.button_4.TextColor = System.Drawing.Color.White;
             this.button_4.UseVisualStyleBackColor = false;
             this.button_4.Click += new System.EventHandler(this.button_4_Click);
-            // 
-            // button_2
-            // 
-            this.button_2.BackColor = System.Drawing.Color.Transparent;
-            this.button_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_2.BorderColor = System.Drawing.Color.Transparent;
-            this.button_2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button_2.FlatAppearance.BorderSize = 0;
-            this.button_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_2.Location = new System.Drawing.Point(120, 242);
-            this.button_2.Name = "button_2";
-            this.button_2.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.button_2.OnHoverButtonColor = System.Drawing.Color.Transparent;
-            this.button_2.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.button_2.Size = new System.Drawing.Size(223, 77);
-            this.button_2.TabIndex = 9;
-            this.button_2.Text = "Wyniki";
-            this.button_2.TextColor = System.Drawing.Color.Black;
-            this.button_2.UseVisualStyleBackColor = false;
-            this.button_2.Click += new System.EventHandler(this.button_2_Click);
-            // 
-            // button_1
-            // 
-            this.button_1.BackColor = System.Drawing.Color.Transparent;
-            this.button_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_1.BorderColor = System.Drawing.Color.Transparent;
-            this.button_1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button_1.FlatAppearance.BorderSize = 0;
-            this.button_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_1.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_1.Location = new System.Drawing.Point(120, 145);
-            this.button_1.Name = "button_1";
-            this.button_1.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.button_1.OnHoverButtonColor = System.Drawing.Color.Transparent;
-            this.button_1.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.button_1.Size = new System.Drawing.Size(223, 77);
-            this.button_1.TabIndex = 8;
-            this.button_1.Text = "Start";
-            this.button_1.TextColor = System.Drawing.Color.Black;
-            this.button_1.UseVisualStyleBackColor = false;
-            this.button_1.Click += new System.EventHandler(this.button_1_Click);
-            // 
-            // button_3
-            // 
-            this.button_3.BackColor = System.Drawing.Color.Transparent;
-            this.button_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button_3.BorderColor = System.Drawing.Color.Transparent;
-            this.button_3.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button_3.FlatAppearance.BorderSize = 0;
-            this.button_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_3.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_3.Location = new System.Drawing.Point(120, 339);
-            this.button_3.Name = "button_3";
-            this.button_3.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.button_3.OnHoverButtonColor = System.Drawing.Color.Transparent;
-            this.button_3.OnHoverTextColor = System.Drawing.Color.Transparent;
-            this.button_3.Size = new System.Drawing.Size(223, 77);
-            this.button_3.TabIndex = 6;
-            this.button_3.Text = "Opcje";
-            this.button_3.TextColor = System.Drawing.Color.Black;
-            this.button_3.UseVisualStyleBackColor = false;
-            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // Form1
             // 
