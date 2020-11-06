@@ -57,12 +57,12 @@ namespace projekt
         {
             if (picAnimation == 0)
             {
-                this.pictureBox2.Load(".\\..\\..\\picture\\fog2.png");
+                this.pictureBox2.Load(".\\..\\..\\picture\\fog1.png");
                
             }
             else if (picAnimation == 1)
             {
-                this.pictureBox2.Load(".\\..\\..\\picture\\fog1.png");
+                this.pictureBox2.Load(".\\..\\..\\picture\\fog2.png");
             }
             
             picAnimation++;
@@ -73,5 +73,9 @@ namespace projekt
             }
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
