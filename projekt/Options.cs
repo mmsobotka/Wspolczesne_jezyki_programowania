@@ -11,26 +11,33 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// The Options class is one of the menu class. This class displays the game options.
+    /// </summary>
     public partial class Options : Form
     {
         mainMenu mainWindow;
+        /// <summary>
+        /// Constructor of Options. Generate option menu, visibility and text of controls, background of theme.
+        /// </summary>
+        /// <param name="menu"></param>
         public Options(mainMenu menu)
         {
             InitializeComponent();
             mainWindow = menu;
 
-            if (mainWindow.choosenTheme == 1) 
+            if (mainWindow.choosenTheme == 1)
             {
                 picture_l.Visible = true;
                 picture_r.Visible = false;
                 this.BackgroundImage = new Bitmap(".\\..\\..\\picture\\tlo.jpg");
                 panel_options.BackColor = Color.FromArgb(100, 0, 0, 0);
             }
-            else 
+            else
             {
                 picture_r.Visible = true;
                 picture_l.Visible = false;
-                this.BackColor = Color.FromArgb(209, 238, 244);                
+                this.BackColor = Color.FromArgb(209, 238, 244);
                 this.BackgroundImage = null;
                 panel_options.BackColor = Color.White;
             }
@@ -77,10 +84,9 @@ namespace projekt
             mainWindow.choosenTheme = 2;
             mainWindow.changedTheme();
 
-            this.BackColor = Color.FromArgb(209,238,244);
+            this.BackColor = Color.FromArgb(209, 238, 244);
             panel_options.BackColor = Color.White;
             this.BackgroundImage = null;
-
         }
 
         private void help_Click(object sender, EventArgs e)

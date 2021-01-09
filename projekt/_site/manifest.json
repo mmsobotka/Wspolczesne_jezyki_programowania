@@ -1,0 +1,270 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Milena/Desktop/projekt_/projekt/projekt",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "JtFpaJ7071hzWLNEdh9CUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "iGwJkDb3po4vk4OkivSSeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "TfjfNiPQKsAwoK+ethilhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ePOSOne.btnProduct.Button_WOC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ePOSOne.btnProduct.Button_WOC.html",
+          "hash": "MwZZUjU3x6Kr81C5TTy6oA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ePOSOne.btnProduct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ePOSOne.btnProduct.html",
+          "hash": "aLGpthOAIsRucV5z9zMJbA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Chemistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Chemistry.html",
+          "hash": "PpdEx6Kwzz09+7gYFutxEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Direction.html",
+          "hash": "v2hyXoF2YzC9kXnlK9cv3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Electronics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Electronics.html",
+          "hash": "99T/wFeNskPmLOioRVK2SQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.IT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.IT.html",
+          "hash": "CzE8gZ+AqQLBq9QywHdV3Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Map.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Map.html",
+          "hash": "qXPTMbkl6f7ySEaA8fcbOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Options.html",
+          "hash": "Ogadl3trkPfA9SVBl6Xbcg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Physics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Physics.html",
+          "hash": "Umv/uUA7iqKoLBJRLfAneg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.Scores.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.Scores.html",
+          "hash": "b7ZKn2FsDYFiis5ulyjwhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.mainMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.mainMenu.html",
+          "hash": "eapy0X19V+b6n21gwfqCmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/projekt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/projekt.html",
+          "hash": "Ay6CcipfgdOnKOd42D6HCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "nsTT5sjlrboR8JtZTmUX2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 12,
+          "skipped_file_count": 12
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

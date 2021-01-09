@@ -11,13 +11,19 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// Enum determining direction
+    /// </summary>
     public enum Direction { Up, Down, Left, Right, UpLeft, UpRight, DownLeft, DownRight, None }
 
+    /// <summary>
+    /// The Map class contains a "return to menu" button, several pictureboxes and 4 buttons to mark the area to start the thematic tasks.
+    /// </summary>
     public partial class Map : Form
     {
         public static int openedTasks = 0;
-        public Direction busDirection=Direction.None;
-        public Direction busPrevDirection=Direction.None;
+        public Direction busDirection = Direction.None;
+        public Direction busPrevDirection = Direction.None;
         public mainMenu mainWindow;
         public Chemistry chemistry;
         public Electronics electronics;
@@ -32,6 +38,10 @@ namespace projekt
         bool keyRight = false;
         bool fireworksTick = false;
 
+        /// <summary>
+        /// Constructor of Map, setting up theme,  visibility of controlis, bus location and timer.
+        /// </summary>
+        /// <param name="menu"></param>
         public Map(mainMenu menu)
         {
             InitializeComponent();
@@ -54,12 +64,15 @@ namespace projekt
             timer1.Start();
             help_Map.Visible = false;
             fireworks.Visible = false;
-        }      
+        }
 
+        /// <summary>
+        /// Method to check if task is done
+        /// </summary>
         public void tasksDone()
         {
             int numberOfTasksDone = 0;
-            if (mainWindow.isPhysicsDone == true) 
+            if (mainWindow.isPhysicsDone == true)
             {
                 ministar1.Visible = true;
                 button_physics.FlatAppearance.BorderColor = Color.LimeGreen;
@@ -84,7 +97,7 @@ namespace projekt
                 numberOfTasksDone++;
             }
 
-            if( numberOfTasksDone == 4)
+            if (numberOfTasksDone == 4)
             {
                 gameover.Visible = true;
                 gameover_ribbon.Visible = true;
@@ -145,7 +158,7 @@ namespace projekt
             }
         }
 
-        private void setDirection() 
+        private void setDirection()
         {
             busPrevDirection = busDirection;
 
@@ -181,13 +194,13 @@ namespace projekt
             {
                 busDirection = Direction.Right;
             }
-            else 
+            else
             {
                 busDirection = Direction.None;
             }
         }
 
-        private void busVisibility() 
+        private void busVisibility()
         {
             busUp.Visible = false;
             busDown.Visible = false;
@@ -199,16 +212,16 @@ namespace projekt
             busDownRight.Visible = false;
         }
 
-        private void busMove() 
+        private void busMove()
         {
             int speed = 1;
             setDirection();
 
-            switch (busDirection) 
-            {    
-                case Direction.Up: 
+            switch (busDirection)
+            {
+                case Direction.Up:
                     {
-                        if(busDirection != busPrevDirection)
+                        if (busDirection != busPrevDirection)
                         {
                             busVisibility();
                             busUp.Visible = true;
@@ -323,7 +336,7 @@ namespace projekt
             checkMission();
         }
 
-        private void checkMission() 
+        private void checkMission()
         {
 
             if ((Math.Abs(busLocation.X - button_physics.Location.X) < 30) && (Math.Abs(busLocation.Y - button_physics.Location.Y) < 30))
@@ -432,8 +445,8 @@ namespace projekt
             {
                 fireworks.Visible = false;
             }
-          
-            fireworksTick  = !fireworksTick;
+
+            fireworksTick = !fireworksTick;
         }
     }
 }

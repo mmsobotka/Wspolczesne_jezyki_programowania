@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// The Physics class is one of the tasks to be played by the user. The topic of the task is the free fall of objects 
+    /// and the second principle of Newton's dynamics.
+    /// </summary>
     public partial class Physics : Form
     {
         Point[] orginalAppleLocation = new Point[3];
@@ -24,6 +28,10 @@ namespace projekt
         int correctAnswears = 0;
         Random random = new Random();
 
+        /// <summary>
+        /// Constructor of Physics. Generate task and visibility and location of controls.
+        /// </summary>
+        /// <param name="map"></param>
         public Physics(Map map)
         {
             InitializeComponent();

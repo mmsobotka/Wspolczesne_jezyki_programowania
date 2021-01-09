@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// IT class is one of the tasks to be played by the user. The topic of the task is the binary and decimal system
+    /// </summary>
     public partial class IT : Form
     {
         Map mainWindowMap;
@@ -21,7 +24,11 @@ namespace projekt
         bool isAnswered = false;
         int score = 0;
         int combo = 1;
-       
+
+        /// <summary>
+        /// Constructor of IT. Generate task and visibility and location of controls.
+        /// </summary>
+        /// <param name="map"></param>
         public IT(Map map)
         {
             InitializeComponent();
@@ -119,7 +126,7 @@ namespace projekt
         {
 
             if (e.Button == MouseButtons.Left && isAnswered == false)
-            {                
+            {
                 number1.Left += e.X - locations[0].X;
                 number1.Top += e.Y - locations[0].Y;
             }
@@ -129,17 +136,17 @@ namespace projekt
                 isAnswered = true;
                 number1.Location = answer.Location;
 
-                if (correctGameAnswear== Convert.ToInt32(number1.Text))
+                if (correctGameAnswear == Convert.ToInt32(number1.Text))
                 {
                     good.Visible = true;
-                    score += 10*combo;
+                    score += 10 * combo;
                     mainWindowMap.mainWindow.scoreIT += 10 * combo;
                     correctAnswears++;
-                    if (combo <=5)
-                    {                        
-                        comboNumber.Text = "x"+ combo.ToString();
+                    if (combo <= 5)
+                    {
+                        comboNumber.Text = "x" + combo.ToString();
                         combo++;
-                    }   
+                    }
                 }
                 else
                 {
@@ -151,7 +158,7 @@ namespace projekt
                 }
 
                 points.Text = score.ToString();
-            }            
+            }
         }
         private void onMouseMoveOption2(object sender, MouseEventArgs e)
         {
@@ -174,7 +181,7 @@ namespace projekt
                     mainWindowMap.mainWindow.scoreIT += 10 * combo;
                     correctAnswears++;
                     if (combo <= 5)
-                    {                        
+                    {
                         comboNumber.Text = "x" + combo.ToString();
                         combo++;
                     }
@@ -199,7 +206,7 @@ namespace projekt
                 number3.Top += e.Y - locations[2].Y;
             }
 
-            if (number3.Bounds.IntersectsWith(answer.Bounds) && isAnswered==false)
+            if (number3.Bounds.IntersectsWith(answer.Bounds) && isAnswered == false)
             {
                 isAnswered = true;
                 number3.Location = answer.Location;
@@ -211,7 +218,7 @@ namespace projekt
                     mainWindowMap.mainWindow.scoreIT += 10 * combo;
                     correctAnswears++;
                     if (combo <= 5)
-                    {                        
+                    {
                         comboNumber.Text = "x" + combo.ToString();
                         combo++;
                     }
@@ -226,7 +233,7 @@ namespace projekt
                 }
                 points.Text = score.ToString();
             }
-            
+
         }
         private void isGameDone()
         {

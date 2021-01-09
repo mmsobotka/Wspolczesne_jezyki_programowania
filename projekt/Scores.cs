@@ -10,9 +10,16 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// The Scores class is one of the menu class. This class displays the results obtained.
+    /// </summary>
     public partial class Scores : Form
     {
         mainMenu mainWindow;
+        /// <summary>
+        /// Constructor of Scores. Generate menu scores and visibility and text of controls.
+        /// </summary>
+        /// <param name="menu"></param>
         public Scores(mainMenu menu)
         {
             InitializeComponent();
@@ -21,12 +28,12 @@ namespace projekt
             if (mainWindow.choosenTheme == 1)
             {
                 this.BackgroundImage = new Bitmap(".\\..\\..\\picture\\tlo.jpg");
-                panel_scores.BackColor=Color.FromArgb(100, 0, 0, 0);
+                panel_scores.BackColor = Color.FromArgb(100, 0, 0, 0);
             }
             else
             {
                 this.BackColor = Color.FromArgb(209, 238, 244);
-                
+
                 this.BackgroundImage = null;
                 panel_scores.BackColor = Color.White;
             }
@@ -49,7 +56,11 @@ namespace projekt
             this.Close();
         }
 
-        private int checkStars() 
+        /// <summary>
+        /// Checking if tasks are done.
+        /// </summary>
+        /// <returns> Number of taks done</returns>
+        private int checkStars()
         {
             int numberOfStars = 0;
             int allScores = mainWindow.scoreChemistry + mainWindow.scoreIT + mainWindow.scoreElectronics + mainWindow.scorePhysics;
@@ -69,7 +80,7 @@ namespace projekt
             {
                 numberOfStars++;
             }
-            if (numberOfStars==4 && allScores > 150)
+            if (numberOfStars == 4 && allScores > 150)
             {
                 numberOfStars++;
             }
@@ -85,10 +96,11 @@ namespace projekt
             star4.Visible = false;
             star5.Visible = false;
 
-           int numberOfStars = checkStars();
-           switch(numberOfStars)
+            int numberOfStars = checkStars();
+            switch (numberOfStars)
             {
-                case 0: star0.Visible = true;
+                case 0:
+                    star0.Visible = true;
                     break;
                 case 1:
                     star1.Visible = true;

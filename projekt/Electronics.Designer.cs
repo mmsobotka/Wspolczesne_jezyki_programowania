@@ -3,9 +3,16 @@ namespace projekt
 {
     partial class Electronics
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         Map mainWindowMap;
         private System.ComponentModel.IContainer components = null;
-        
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (Map.openedTasks > 0)

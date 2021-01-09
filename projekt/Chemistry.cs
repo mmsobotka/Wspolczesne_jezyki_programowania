@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// The Chemistry class is one of the tasks to be played by the user.The topic of the task are the periodic table and chemical elements.
+    /// </summary>
     public partial class Chemistry : Form
     {
         Map mainWindowMap;
@@ -42,6 +45,10 @@ namespace projekt
             {"Molibden", "Mo" },
         };             
 
+        /// <summary>
+        /// Constructor of Map. Setting up elements table, generate task and visibility of controls.
+        /// </summary>
+        /// <param name="map"></param>
         public Chemistry(Map map)
         {
             InitializeComponent();

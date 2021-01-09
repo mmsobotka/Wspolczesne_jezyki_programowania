@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// Electronics class is one of the tasks to be played by the user. The topic of the task is logical gateways 
+    /// and the basics of digital technology
+    /// </summary>
     public partial class Electronics : Form
     {
         bool a = false;
@@ -28,6 +32,10 @@ namespace projekt
         string gateName;
 
         Random random = new Random();
+        /// <summary>
+        /// Constructor of Electronics. Generate task and visibility of controls.
+        /// </summary>
+        /// <param name="map"></param>
         public Electronics(Map map)
         {
             InitializeComponent();
@@ -88,8 +96,8 @@ namespace projekt
         private void bit1_on_Click(object sender, EventArgs e)
         {
             bit1_off.Visible = true;
-            bit1_on.Visible = false; 
-            
+            bit1_on.Visible = false;
+
             isAnswer1 = false;
         }
 
@@ -102,10 +110,10 @@ namespace projekt
         }
 
         private bool checkGate()
-        {            
+        {
             bool gate1 = !(a || b);
             bool gate2 = !(gate1 && c);
-            bool gate3 = !(c||d);
+            bool gate3 = !(c || d);
             bool gate4 = !(gate2 && gate3);
 
             return gate4;
@@ -116,7 +124,7 @@ namespace projekt
             generateGame();
         }
 
-        private void generateGame() 
+        private void generateGame()
         {
             isGame1Clicked = false;
             isGame2Clicked = false;
@@ -154,7 +162,7 @@ namespace projekt
 
         private void check_Gate_Click(object sender, EventArgs e)
         {
-            if (isGame1Clicked == false) 
+            if (isGame1Clicked == false)
             {
                 bool result = checkGate();
 
@@ -187,7 +195,7 @@ namespace projekt
 
                 points.Text = score.ToString();
                 isGame1Clicked = true;
-            }            
+            }
         }
 
         private void and_Click(object sender, EventArgs e)
@@ -216,12 +224,12 @@ namespace projekt
                 }
                 points.Text = score.ToString();
                 isGame2Clicked = true;
-            }            
+            }
         }
 
         private void not_Click(object sender, EventArgs e)
         {
-            if (isGame2Clicked == false) 
+            if (isGame2Clicked == false)
             {
                 if (gateName == "NOT")
                 {
@@ -245,12 +253,12 @@ namespace projekt
                 }
                 points.Text = score.ToString();
                 isGame2Clicked = true;
-            }            
+            }
         }
 
         private void nand_Click(object sender, EventArgs e)
         {
-            if (isGame2Clicked == false) 
+            if (isGame2Clicked == false)
             {
                 if (gateName == "NAND")
                 {
@@ -274,7 +282,7 @@ namespace projekt
                 }
                 points.Text = score.ToString();
                 isGame2Clicked = true;
-            }            
+            }
         }
 
         private void or_Click(object sender, EventArgs e)
@@ -303,7 +311,7 @@ namespace projekt
                 }
                 points.Text = score.ToString();
                 isGame2Clicked = true;
-            }           
+            }
         }
 
         private void nor_Click(object sender, EventArgs e)
@@ -332,12 +340,12 @@ namespace projekt
                 }
                 points.Text = score.ToString();
                 isGame2Clicked = true;
-            }            
+            }
         }
 
         private void xor_Click(object sender, EventArgs e)
         {
-            if (isGame2Clicked == false) 
+            if (isGame2Clicked == false)
             {
                 if (gateName == "XOR")
                 {
@@ -361,7 +369,7 @@ namespace projekt
                 }
                 points.Text = score.ToString();
                 isGame2Clicked = true;
-            }                        
+            }
         }
         private void isGameDone()
         {

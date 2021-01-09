@@ -4,6 +4,9 @@ using System.Windows.Forms;
 
 namespace ePOSOne.btnProduct
 {
+    /// <summary>
+    /// The Button_WOC class allows create round buttons.This is an implemented ready-made class
+    /// </summary>
     public class Button_WOC : Button
     {
         private Color _borderColor = Color.Silver;
@@ -17,7 +20,9 @@ namespace ePOSOne.btnProduct
         private int _borderThickness = 6;
         private int _borderThicknessByTwo = 3;
 
-
+        /// <summary>
+        /// Button_WOC isHovering
+        /// </summary>
         public Button_WOC()
         {
             DoubleBuffered = true;
@@ -33,7 +38,9 @@ namespace ePOSOne.btnProduct
             };
         }
 
-
+        /// <summary>
+        /// Button_WOC OnPaint funtion
+        /// </summary>
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -65,7 +72,9 @@ namespace ePOSOne.btnProduct
             g.DrawString(Text, Font, brush, (Width - stringSize.Width) / 2, (Height - stringSize.Height) / 2);
         }
 
-
+        /// <summary>
+        /// Button_WOC BorderColor
+        /// </summary>
         public Color BorderColor
         {
             get => _borderColor;
@@ -76,6 +85,9 @@ namespace ePOSOne.btnProduct
             }
         }
 
+        /// <summary>
+        /// Button_WOC OnHoverBorderColor
+        /// </summary>
         public Color OnHoverBorderColor
         {
             get => _onHoverBorderColor;
@@ -86,6 +98,9 @@ namespace ePOSOne.btnProduct
             }
         }
 
+        /// <summary>
+        /// Button_WOC ButtonColor
+        /// </summary>
         public Color ButtonColor
         {
             get => _buttonColor;
@@ -96,6 +111,9 @@ namespace ePOSOne.btnProduct
             }
         }
 
+        /// <summary>
+        /// Button_WOC OnHoverButtonColor
+        /// </summary>
         public Color OnHoverButtonColor
         {
             get => _onHoverButtonColor;
@@ -106,6 +124,9 @@ namespace ePOSOne.btnProduct
             }
         }
 
+        /// <summary>
+        /// Button_WOC TextColor
+        /// </summary>
         public Color TextColor
         {
             get => _textColor;
@@ -116,6 +137,10 @@ namespace ePOSOne.btnProduct
             }
         }
 
+
+        /// <summary>
+        /// Button_WOC OnHoverTextColor
+        /// </summary>
         public Color OnHoverTextColor
         {
             get => _onHoverTextColor;

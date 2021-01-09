@@ -11,8 +11,12 @@ using System.Windows.Forms;
 
 namespace projekt
 {
+    /// <summary>
+    /// MainMenu is the main class. Includes map, options menu and scores window. It stores information about player scores and selected theme.
+    /// </summary>
     public partial class mainMenu : Form
     {
+
         public Map map;
         public Scores scores;
         public Options options;
@@ -28,6 +32,9 @@ namespace projekt
         public bool isITDone = false;
         public bool isElectronicsDone = false;
 
+        /// <summary>
+        /// Constructor of MainMenu. Initialize sounds.
+        /// </summary>
         public mainMenu()
         {
             InitializeComponent();
@@ -35,11 +42,14 @@ namespace projekt
 
             player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + ".\\..\\..\\music\\BackgroundMusic.wav";
             player.Play();
-        }    
-               
+        }
+
+        /// <summary>
+        /// Methode setting up choosen theme.
+        /// </summary>
         public void changedTheme()
         {
-            if (choosenTheme == 1) 
+            if (choosenTheme == 1)
             {
                 this.BackgroundImage = new Bitmap(".\\..\\..\\picture\\tlo.jpg");
                 panel_menu.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -48,7 +58,7 @@ namespace projekt
                 label2.Visible = false;
                 z.Visible = true;
             }
-            else 
+            else
             {
                 this.BackColor = Color.FromArgb(209, 238, 244);
                 this.BackgroundImage = null;
@@ -65,12 +75,12 @@ namespace projekt
             if (picAnimation == 0)
             {
                 this.pictureBox2.Load(".\\..\\..\\picture\\fog1.png");
-               
+
             }
             else if (picAnimation == 1)
             {
                 this.pictureBox2.Load(".\\..\\..\\picture\\fog2.png");
-            }            
+            }
             picAnimation++;
 
             if (picAnimation == 3)
@@ -80,30 +90,30 @@ namespace projekt
         }
 
         private void button_start_Click(object sender, EventArgs e)
-        {            
+        {
             this.map = new Map(this);
             this.map.Location = this.Location;
             this.map.StartPosition = FormStartPosition.Manual;
             this.map.Show();
-            this.Visible = false;            
+            this.Visible = false;
         }
 
         private void button_scores_Click(object sender, EventArgs e)
-        {                        
+        {
             this.scores = new Scores(this);
             this.scores.Location = this.Location;
             this.scores.StartPosition = FormStartPosition.Manual;
             this.scores.Show();
-            this.Visible = false;            
+            this.Visible = false;
         }
 
         private void button_options_Click(object sender, EventArgs e)
-        {            
+        {
             this.options = new Options(this);
             this.options.Location = this.Location;
             this.options.StartPosition = FormStartPosition.Manual;
             this.options.Show();
-            this.Visible = false;            
+            this.Visible = false;
         }
 
         private void mainMenu_Load(object sender, EventArgs e)
